@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\98cbac0ecff1bed1d9cf3d94a263e183c1fcba37\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="c9a721adcd7dbae7a197b0ef81102336539f63ff">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_67bd073de9907b2142108bd474e8402e8a1a772e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_dd57810eb5c93668ec207a3c14fb72b65bee2ba3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\d79ecdc1ceb01a436d3ad6a836ddf8d1cbb887d0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="3304d33470ff64cf83bce9189ff3648a42eb2aa7">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c90aa98b435a5f250e2de88ac8d0585fd18b23a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\30db4eb2273496badafa5d1b09d624a7b64c4b80\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="d968b9bd0011800e0d333d1571b8d34bcb8a0b6e">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d2acf9113a25a5b02b32c32f5607b27852f6289d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.1.0\8007981f7d7540d89cd18471b8e5dcd2b4f99167\common-1.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="8007981f7d7540d89cd18471b8e5dcd2b4f99167">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\common-1.1.0_e438c0b094e4321dd4230635a4510c41fe851ec1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\6d86d62de2089235517965f49ea2f3fd76e7d6be\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="8a9fd7c97f1d13f97f3b52f9d2e54cd857d5acf9">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_552f0ceed6d6e3a2f245d833390e7a2aff633bcf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\6aeb2ec29e3341d02fe5af282dcc91c58b3af210\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="ec657bb192b20229696216bf233779b16bf75a54">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f8c05595b6c16e2e73d0a510deb9b2694dd7a7ec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.1.0\edf3f7bfb84a7521d0599efa3b0113a0ee90f85\common-1.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="0edf3f7bfb84a7521d0599efa3b0113a0ee90f85">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\common-1.1.0_f175192dc333a42623fdcdcca8d60ae7767a41e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\15d709e0f680b8f555d513a677ad17bb09c63f31\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="2feadd535770271ca57b7b431f42151aa4af324a">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3e893e871b661aeb0112d3b1528e514675b02138\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\e2bd03f55f94eb2b5b618bd14592e0905bfbff62\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="23dcb4803d3103bde3f3f5db978a726338fe49ae">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_936ac758bcd7de7980a192de6dd8ab28076ceacf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="047f4a90a8f88b1798d6eabafc6b1908f90b1f6d">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ebee8bc7d054c6f9d9b90972a7e975a6a64ea2af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\3ca01681529d8d19aaece2e4cd3349de53656194\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="874f1143c11f5d38533efe512bf913e3e847e7df">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5a04c18630c810743d9dd691c16157b5e1391bc7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.1.1\39ded76b5e1ce1c5b2688e1d25cdc20ecee32007\support-annotations-27.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="39ded76b5e1ce1c5b2688e1d25cdc20ecee32007">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-27.1.1_fd19c756279428c88addee9bb6b7f544b5af542b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\9c85acb765a5dff6e2c605820dcdd13da26c135e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="71d380aeac037e63bab7bda2ba211777e16a2f42">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6adc6afd7648cbba102f03d788d772c9f0f5b278\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\861053205c25838c74093773c311c015a7a4c357\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="e2bbe48deed35056023eed2cdc0cc92e5c7d3617">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d6a503b25309792ad2706db2baac8894d4f9c375\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\lzh\.android\build-cache\32aa4a7ba6332375b4706809f9b619be3a949b9d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="28.0.0"
+        sha1="1fd3ceac7f415975323d52c6c6057db409a907f6">
+        <dex dex="E:\ShiZhuangYuan\MyCamera\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a9bbfadd4e86fec2227b1b0d1f685e75d3b0ed75\classes.dex" />
+    </item>
+
+</items>
