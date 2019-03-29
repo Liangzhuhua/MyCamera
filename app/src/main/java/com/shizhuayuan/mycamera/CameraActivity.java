@@ -8,6 +8,8 @@ import android.hardware.Camera;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.Surface;
@@ -15,8 +17,13 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.shizhuayuan.mycamera.adapter.HorizontalListViewAdapter;
+import com.shizhuayuan.mycamera.views.HorizontalListView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -45,6 +52,8 @@ public class CameraActivity extends Activity {
 
     private Camera mCamera = null;                        //Camera对象
 
+    View olderSelectView = null;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +75,43 @@ public class CameraActivity extends Activity {
 
         surfaceHolder.addCallback(new CameraSurfaceCallBack());
         btn_takePhoto.setOnClickListener(new BtnTakePhotoListener());
+
+        initUI();
+    }
+
+    private void initUI(){
+        final HorizontalListView hListView;
+        final HorizontalListViewAdapter hListViewAdapter;
+        hListView = (HorizontalListView)findViewById(R.id.horizon_listview);
+        //previewImg = (ImageView)findViewById(R.id.image_preview);
+        String[] titles = {"1", "2", "3", "4", "5", "6", "7", "8"};
+
+        hListViewAdapter = new HorizontalListViewAdapter(getApplicationContext(),titles);
+        hListView.setAdapter(hListViewAdapter);
+
+        hListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO Auto-generated method stub
+              if(olderSelectView == null){
+                  olderSelectView = view;
+              }else{
+                  olderSelectView.setSelected(false);
+                  olderSelectView = null;
+              }
+              olderSelectView = view;
+              view.setSelected(true);
+                //previewImg.setImageResource(ids[position]);
+                hListViewAdapter.setSelectIndex(position);
+                hListViewAdapter.notifyDataSetChanged();
+
+                handler.obtainMessage(position).sendToTarget();
+
+            }
+        });
+
     }
 
     /**
@@ -154,6 +200,7 @@ public class CameraActivity extends Activity {
         }
         mCamera.startPreview();
         mPreviewRunning = true;
+        handler.obtainMessage(99).sendToTarget();
     }
 
     /**
@@ -331,6 +378,62 @@ public class CameraActivity extends Activity {
         public void onClick(View v) {
             Log.e("TAG","拍照按钮事件回调");
             takePhoto();
+        }
+    }
+
+    Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case 0:
+                    setCameraWonderful(Camera.Parameters.EFFECT_NONE);
+                    break;
+                case 1:
+                    setCameraWonderful(Camera.Parameters.EFFECT_MONO);
+                    break;
+                case 2:
+                    setCameraWonderful(Camera.Parameters.EFFECT_NEGATIVE);
+                    break;
+                case 3:
+                    setCameraWonderful(Camera.Parameters.EFFECT_SOLARIZE);
+                    break;
+                case 4:
+                    setCameraWonderful(Camera.Parameters.EFFECT_SEPIA);
+                    break;
+                case 5:
+                    setCameraWonderful(Camera.Parameters.EFFECT_POSTERIZE);
+                    break;
+                case 6:
+                    setCameraWonderful(Camera.Parameters.EFFECT_WHITEBOARD);
+                    break;
+                case 7:
+                    setCameraWonderful(Camera.Parameters.EFFECT_BLACKBOARD);
+                    break;
+                case 8:
+                    setCameraWonderful(Camera.Parameters.EFFECT_AQUA);
+                    break;
+                case 99:
+                    initUI();
+                    break;
+            }
+        }
+    };
+
+    private void setCameraWonderful(String effect){
+        try{
+            if (mPreviewRunning) {
+                mCamera.stopPreview();
+            }
+            Camera.Parameters parameters;
+            parameters = mCamera.getParameters();
+
+            parameters.setColorEffect(effect);
+
+            mCamera.setParameters(parameters);
+            mCamera.startPreview();
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 
